@@ -1,0 +1,18 @@
+# sandbox: docker | agentcore     model_provider: anthropic | local
+sandbox: docker
+model_provider: anthropic
+
+# reviewer attaches figures as vision input (claude-haiku-4-5 supports images)
+vision: true
+
+anthropic:
+  # dev cost policy: Haiku only while developing
+  model: claude-haiku-4-5
+
+# escape hatch: any OpenAI-compatible endpoint
+local:
+  base_url: http://localhost:11434/v1
+  model: ""
+
+agentcore:
+  region: us-east-1

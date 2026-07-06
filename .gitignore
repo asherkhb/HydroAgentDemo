@@ -1,0 +1,18 @@
+# secrets
+.env
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# run logs / outputs
+runs/
+
+# generated dataset (recreate with: python data/generate_data.py)
+# ground_truth.json is grading-only and must never be published
+data/*.csv
+data/ground_truth.json
+
+# macOS
+.DS_Store
